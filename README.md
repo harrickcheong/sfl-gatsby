@@ -18,4 +18,7 @@ Here are references to the resoucres used to create the app
 - https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
 - https://reactjs.org/docs/hooks-intro.html
 
-*Note: The home page is accessible by clicking the app name in the header/navigation bar.*
+Preview the website live by visiting the link below.
+- https://sflchallengebyharrick.netlify.app/
+
+*Note: The home page is accessible by clicking the `app's name` in the header/navigation bar.*
