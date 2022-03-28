@@ -1,6 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
+    menuLinks:[
+      {
+        name:`Page 2`,
+        link:'/page-2'
+      },
+      {
+        name:`Using TypeScript`,
+        link:'/using-typescript'
+      }
+    ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
