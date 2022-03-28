@@ -1,4 +1,4 @@
-# sfl-gatsby
+# Coding Challenge by Software For Love
 
 ## Description
 This web-app is an application designed to have one feature, which is the navigation bar. This bar lists the names of two pages so that when a user clicks one, it redirects them to the corresponding page. The navbar is also responsive to resizing where the elements in the navbar become hidden and a button shows up, after reaching a certain screen size. If the button is clicked, then it provides a drop down menu with the pages as elements to the user. Clicking an element has the same functionality where it redirects the user to the corresponding page. 
