@@ -1,26 +1,40 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-// import Navbar from "./navbar"
-// import '../styles/header.css'
+import '../styles/header.css'
+import { useState } from 'react';
 
-const Header = ({ siteTitle, menuLinks }) => (
-  <header
-    // style={{
-    //   background: `rebeccapurple`,
-    //   marginBottom: `1.45rem`,
-    // }}
-  >
-      <Link to="/">{siteTitle}</Link>
-        <ul>
-            {menuLinks.map(link => (
-                <li key={link.name}>
-                    <Link to={link.link}>{link.name}</Link>
-                </li>
-            ))}
-        </ul>
+const Header = ({ siteTitle, menuLinks }) => {
+    const [isActive, setActive] = useState(false);
+
+    const openHam = () => {
+        setActive(!isActive)
+    };
+
+    return(
+  <header>
+      <nav className="navbar">
+          <h1 className="title">
+            <Link to="/">{ siteTitle }</Link>
+          </h1>
+          <Link to="#" className="hamButton" onClick={openHam}>
+              <span className="horizontal"/>
+              <span className="horizontal"/>
+              <span className="horizontal"/>
+          </Link>
+          <div className={`navbarLinks ${isActive ? 'navbarLinks-active' : ''}`}>
+            <ul>
+                {menuLinks.map(link => (
+                    <li key={link.name}>
+                        <Link to={link.link}>{link.name}</Link>
+                    </li>
+                ))}
+            </ul>
+          </div>
+      </nav>
   </header>
 )
+}
 
 
 Header.propTypes = {
