@@ -17,3 +17,5 @@ Here are references to the resoucres used to create the app
 - https://www.gatsbyjs.com/docs/creating-dynamic-navigation/
 - https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
 - https://reactjs.org/docs/hooks-intro.html
+
+*Note: The home page is accessible by clicking the app name in the header/navigation bar.*
